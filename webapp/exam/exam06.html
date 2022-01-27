@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡 abcdefg </p>
+</body>
+	
+	<script type="text/javascript">
+
+		//id가 p1인 p 태그 속 텍스트를 다음 텍스트로 변경
+		$("#p1").text("가나다라마바사");
+		
+		//p2 text 실행 후 변수에 담아 콘솔에 출력
+		var text = $("#p2").text();
+		console.log(text);
+		//p2 text 콘솔 출력 한 줄로 끝내기
+		console.log($("#p2").text());
+		
+	</script>
+
+</html>

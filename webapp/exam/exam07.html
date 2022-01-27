@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡<br /> abcdefg </p>
+</body>
+	
+<script type="text/javascript">
+
+	//태그를 직접 넣어 사용하기 위해서는 html()을 이용해야 한다.
+	$("#p1").html("<strong>가나다라마바사</strong>");
+	
+	//html로 가져온다. <-- <br>등의 태그도 가져온다.
+	var text = $("#p2").html();
+	console.log(text);
+	
+	//text만 뽑아온다.
+	var text2 = $("#p2").text();
+	console.log(text2);
+
+</script>
+
+</html>

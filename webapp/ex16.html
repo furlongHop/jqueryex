@@ -15,18 +15,18 @@
 	
 	<script type="text/javascript">
 	
-		//이벤트: ~할 '때'
+		//자바 스크립트로 화면 제어 --> body 부분에 있는 div 변화 : 클라이언트(reponse 전달 후) 화면에서 변화
 		window.onload = function(){
 			//html --> 자바 스크립트 객체화
 			var testButton = document.getElementById("btn");
 			var testArea = document.getElementById("display");
 			
-			//버튼을 클릭했을 때(이벤트 발생)
+			//버튼을 클릭했을 때(이벤트 발생)-이벤트: ~할 '때'
 			testButton.onclick = function(){
 				console.log("버튼 클릭");
-				//텍스트 영역을 변경
+				//텍스트 영역을 변경 
 				testArea.innerHTML = '<font color="red">홍길동</font>';
-			}
+			} //--> 버튼 클릭시 텍스트 변화
 
 		};
 	</script>

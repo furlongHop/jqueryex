@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+
+	</ul>
+
+</body>
+
+<script type="text/javascript">
+
+	$("li").on("click", function() {
+		var tag = $(this); //클릭된 해당 li를 tag 변수에 입력
+		var tagId = tag.attr("id"); //tag에 들어간 li의 속성 중 id 값을 tagId에 입력
+		console.log(tagId);
+		tag.text('최한'); //tag의 text를 다음과 같이 변경 + html을 이용해 변경시 태그도 적용 가능
+	})
+
+</script>
+
+
+</html>

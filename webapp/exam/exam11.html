@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<style>
+	.red {color: red;}
+	
+	.blue {color: blue;}
+
+</style>
+
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		<li>다섯번째 아이템입니다.</li>
+	</ul>
+
+</body>
+	
+<script type="text/javascript">
+
+	/*정의된 속성(디자인) 종류가 여럿일 경우 그 속성을 한 번에 바꿔야 할 때 곤란하다.
+	그럴 경우 정의된 클래스나 아이디를 바꿔주는 것이 편하다.*/
+
+	//기존에 있던 클래스를 삭제하지 않고 추가할 경우 클래스가 두 개가 될 뿐 그 전에 있던 클래스가 사라지지는 않는다.
+	$("#first").removeClass("red");
+	$("#first").addClass("blue");
+	
+</script>
+
+
+</html>

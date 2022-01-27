@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+	<button id="btn" type="button">li 태그 추가 버튼</button>
+</body>
+
+<script type="text/javascript">
+	
+	$("#btn").on("click",function(){
+		$("ul").append("<li id='5'>다섯 번째 아이템입니다.</li>");
+		$("ul").append("<li id='6'>여섯 번째 아이템입니다.</li>");
+		$("ul").append("<li id='7'>일곱 번째 아이템입니다.</li>");
+	});
+	
+	/* $("li").on("click",function(){
+		var tag = $(this);  
+		var text = tag.text();
+		console.log(text);
+	}); //이 경우엔 나중애 추가돤 li는 클릭이 먹지 않는다. */
+
+	//ul에 click 기능을 주고(여기서 멈추면 박스 전체가 한 묶음으로 인식되어 클릭된다), ul이 li에게 위임한다.
+	$("ul").on("click", "li", function(){
+		var tag = $(this);  
+		var text = tag.text();
+		console.log(text);
+	});
+
+</script>
+
+</html>
