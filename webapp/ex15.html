@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바 스크립트 예제</h1>
+	
+	<script type="text/javascript">
+	
+		//배열 생성
+		var personList = [];
+		
+		//첫 번째 객체
+		var personVo01 = {
+				name: "정우성",
+				hp:"010-2222-2222",
+				company:"02-2222-2222"
+		};
+		
+		//두 번째 객체
+		var personVo02 = {};
+		personVo02.name = "유재석";
+		personVo02.hp = "010-3333-3333";
+		personVo02.company = "02-3333-3333";
+			
+		//세 번째 객체
+		var personVo03 ={
+			name: "이효리",
+			hp: "010-4444-4444"
+		}
+		personVo03.company = "02-4444-4444";
+		
+		//배열에 Vo 추가
+		personList.push(personVo01);
+		personList.push(personVo02);
+		personList.push(personVo03);
+		
+		//배열 출력
+		console.log(personList);
+	
+		//name 출력
+		for(var i=0; i<personList.length; i++){
+			console.log(personList[i].name);
+		}
+		
+	</script>
+</body>
+</html>

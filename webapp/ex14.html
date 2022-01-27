@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바 스크립트 예제</h1>
+	
+	<script type="text/javascript">
+		
+		//객체 생성
+		var guestbookVo = {
+				no:1,
+				name:"최한",
+				password:"1108",
+				content:"첫 번째 방문입니다.",
+				showInfo: function(){return 3+4}
+		};
+		
+		console.log(guestbookVo);
+		
+		console.log(guestbookVo.no);
+		console.log(guestbookVo.name);
+		console.log(guestbookVo.password);
+		console.log(guestbookVo.content);
+		console.log(guestbookVo.showInfo());
+		
+		guestbookVo.regDate = "2022-01-27";
+		console.log(guestbookVo);
+		
+		console.log("=========================");
+		var personVo = {};
+		console.log(personVo);
+		
+		personVo.no = 1;
+		personVo.name = "유재석";
+		personVo.hp = "010-2222-2222";
+		personVo.company = "02-2222-2222";
+		
+		console.log(personVo);
+		
+		console(personVo.name);
+		console.log(personVo["name"]);
+		
+		
+	</script>
+</body>
+</html>

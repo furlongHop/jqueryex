@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바 스크립트 예제</h1>
+
+	<script type="text/javascript">
+
+	/*
+		var name = "global";
+		
+		function checkscope(){
+			var name = "local"; //지역변수> 만들어졌다가 사라진다.
+			console.log(name);
+		}
+		
+		checkscope(); //local
+		console.log(name); //global
+	*/
+	
+		//전역 변수
+		var name = "global";//var: 초기화 담당
+		
+		function checkscope(){
+			name = "local";//var 없이 값을 넣을 경우 name 값이 완전히 변경된다.
+			name2 = "지역변수";//var 없이 처음 선언시 기능 안에서도 전역변수로 선언된다. 전역 변수 선언은 기능 밖에서 하자.
+		}
+		
+		checkscope(); 
+		console.log(name); //local-->checkscope를 실행했으므로 데이터가 변화했다.
+		console.log(name2); //지역변수
+	
+	</script>
+</body>
+</html>
