@@ -13,18 +13,19 @@
 	
 </body>
 	
+	<!-- 자바 스크립트는 html을 이해하지 못하므로 자바 스크립트가 해당 문법을 이해할 수 있게 만드는 과정이 필요하다. -->
 	<script type="text/javascript">
 	
 		//자바 스크립트로 화면 제어 --> body 부분에 있는 div 변화 : 클라이언트(reponse 전달 후) 화면에서 변화
-		window.onload = function(){
-			//html --> 자바 스크립트 객체화
-			var testButton = document.getElementById("btn");
+		window.onload = function(){//window 실행시(이벤트 발생-onload) 다음 기능 실행
+			//getElementById: html 문법을 자바 스크립트가 해석할 수 있도록 객체화
+			var testButton = document.getElementById("btn");//id가 btn인 html을 받아 객체로 만들어 변수에 저장
 			var testArea = document.getElementById("display");
 			
 			//버튼을 클릭했을 때(이벤트 발생)-이벤트: ~할 '때'
 			testButton.onclick = function(){
 				console.log("버튼 클릭");
-				//텍스트 영역을 변경 
+				//innerHTML: html 안쪽 부분을 다음과 같이 변경 
 				testArea.innerHTML = '<font color="red">홍길동</font>';
 			} //--> 버튼 클릭시 텍스트 변화
 
